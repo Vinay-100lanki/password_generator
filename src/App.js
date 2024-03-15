@@ -3,23 +3,18 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="passwordBox">
+      <h2>Password generaotor</h2>
+      <div className='passwordbox'>
+        <input type='text' readOnly></input><button>Copy</button>
+      </div>
+      <div className='passLength'>
+          <label>Password Length</label>
+          <input type='number' max={20} min={6}></input>
+      </div>
     </div>
   );
 }
 
 export default App;
+ 
